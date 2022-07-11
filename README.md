@@ -7,7 +7,7 @@ Iteration order is guaranteed to be the iteration order of the first argument.
 ## Installation
 
 ```
-pip install "git+https://github.com/mCodingLLC/dict_zip@v0.0.2"
+pip install "git+https://github.com/mCodingLLC/dict_zip@v0.0.3"
 ```
 
 ## Usage
