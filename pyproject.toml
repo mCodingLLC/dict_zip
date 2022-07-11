@@ -6,3 +6,6 @@ requires = ["setuptools>=62", "wheel"]
 testpaths = [
   "tests",
 ]
+
+[tool.cibuildwheel]
+build = "cp3[789]* cp310*"
