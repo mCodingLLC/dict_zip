@@ -4,6 +4,14 @@ Like `zip` but for corresponding dictionaries (dicts with the same keys).
 `dict_zip` takes any number of dictionaries and gives you an iterable of corresponding elements of those dictionaries.
 Iteration order is guaranteed to be the iteration order of the first argument.
 
+## Installation
+
+```
+pip install "git+https://github.com/mCodingLLC/dict_zip@v0.0.2"
+```
+
+## Usage
+
 Signature:
 ```
 dict_zip(d1, ..., dn) -> iterable of (key, v1, ..., vn)
@@ -40,8 +48,7 @@ Note: `dict_zip` is strict, meaning the keys of every argument must be equal
 if the lengths differ or a `KeyError` during iteration for a missing key.
 Modifying any of the dicts during iteration is not allowed.
 
-
-
+## Want to contribute?
 
 There is some parallel between dict zipping and SQL joins (left, inner, outer, etc.), 
 but only strict zipping is currently supported.
