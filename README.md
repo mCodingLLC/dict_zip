@@ -26,13 +26,21 @@ from dict_zip import dict_zip
 def main():
     prices = {"apple": 1.00, "banana": 2.50, "chocolate": 3.00}
     quantities = {"apple": 12, "banana": 6, "chocolate": 1}
-    costs = {"apple": 1, "banana": "two", "chocolate": "three"}
+    costs = {"apple": 0.50, "banana": 2.00, "chocolate": 2.50}
 
     for name, price, quantity, cost in dict_zip(prices, quantities, costs):
-        print(f"Item: {name}, Profit: {(price - cost) * quantity}")
+        print(f"Item: {name}, Profit: ${(price - cost) * quantity:.2f}")
 
 if __name__ == "__main__":
     main()
+```
+
+prints
+
+```
+Item: apple, Profit: $6.00
+Item: banana, Profit: $3.00
+Item: chocolate, Profit: $0.50
 ```
 
 WARNING: `dict_zip` is intended for use with `dict` and `dict` subclasses only, not general mappings.
